@@ -1,0 +1,125 @@
+*{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+header{
+	padding-left: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: black;
+	color: grey;	
+}
+h3{
+	margin: 0;
+}
+body{
+	margin: 0;
+}
+
+main{
+	width: 70%;
+	margin: auto;
+	margin-top: 100px;
+}
+
+form{
+	margin: auto;
+	box-sizing: border-box;
+	width: 90%;
+}
+
+input[type="text"]{
+	box-sizing: border-box;
+	padding: 6px;
+	width: 80%;
+	margin: 0 0 30px;
+	border-radius: 3px;
+}
+
+input[type="submit"]{
+	box-sizing: border-box;
+	padding: 6px;
+	width: 19%;
+	background-color: #337ab7;
+	color: white;
+	border-color: #337ab7;
+	border-radius: 3px;
+	margin: 0 0 30px;
+}
+input[type="checkbox"]{
+	
+}
+
+.checkmark {
+  position: absolute;
+  top: 20;
+  left: 20px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+tr.checked .checkmark {
+  background-color: #2196F3;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+tr.checked .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+table{
+	margin: 0;
+	width: 100%;
+	border: 1px solid;
+	border-color: lightgrey;
+  	border-collapse: collapse;
+  	border-radius: 3px;
+}
+
+td:last-child{
+	text-align: right;
+	width: 50px;
+	padding-right: 20px;
+	color: red;
+}
+
+td:first-child{
+	position: relative;
+	text-align: left;
+	width: 50px;
+	padding-left: 20px;
+	padding-right: 0;
+}
+
+td:second-child{
+	text-align: left;
+}
+
+td{
+	padding: auto;
+	border-bottom: 1px solid;
+	border-color: lightgrey;
+	border-radius: 3px;
+}
+
+tr.checked p{
+	text-decoration: line-through;
+}

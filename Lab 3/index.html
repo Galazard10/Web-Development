@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>To-Do List</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		<script type="text/javascript" src="script.js" defer></script>
+	</head>
+	<body>
+		<header>
+				<h3>To-Do List</h3>	
+		</header>
+			<main>
+				<h1>To-Do List</h1>
+				<form onsubmit="addToList();return false;">
+					<input type="text" name="newTask" id="newTask" placeholder="New Task">
+					<input type="submit" name="submit" id="submit" value="Add">
+				</form>
+				<div class="tasks">
+					<table>
+						<tbody id="tasks">
+						</tbody>
+					</table>
+				</div>
+			</main>
+	</body>
+</html>
